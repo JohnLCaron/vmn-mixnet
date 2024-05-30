@@ -1,0 +1,93 @@
+
+-----------------------------------------------------------
+ Copyright Douglas Wikstrom 2008-2019
+ Licensed under AGPL as defined in:
+ https://www.gnu.org/licenses/agpl-3.0.en.html
+-----------------------------------------------------------
+-----------------------------------------------------------
+Party03
+-----------------------------------------------------------
+240528 16:05:44 Starting hint server.
+240528 16:05:44 Starting http server.
+240528 16:05:44 Synchronizing with the other servers. Please wait.
+240528 16:05:44 Generate keys for secret communication.
+240528 16:05:44 | Generate and read plain keys.
+240528 16:05:44 | | Generate key-pair.
+240528 16:05:44 | | Exchange public keys with all parties.
+240528 16:05:44 | | | Read public key of Party01.
+240528 16:05:44 | | | Parsed public key successfully.
+240528 16:05:44 | | | Read public key of Party02.
+240528 16:05:44 | | | Parsed public key successfully.
+240528 16:05:44 | | | Publish public key.
+240528 16:05:44 | | Writing keys to file.
+240528 16:05:44 | Generate independent generator.
+240528 16:05:44 | | Execute Pedersen 2 times with rotating dealer.
+240528 16:05:44 | | | Verify Pedersen VSS of Party01.
+240528 16:05:44 | | | | Read checking elements and ciphertexts from Party01.
+240528 16:05:44 | | | | Our share is correct.
+240528 16:05:44 | | | | Exchange verdicts.
+240528 16:05:44 | | | | | Read verdict of Party01.
+240528 16:05:45 | | | | | Parse verdict (true).
+240528 16:05:45 | | | | | Read verdict of Party02.
+240528 16:05:45 | | | | | Parse verdict (true).
+240528 16:05:45 | | | | | Publish verdict (true).
+240528 16:05:45 | | | | Sharing of Party01 is accepted.
+240528 16:05:45 | | | Verify Pedersen VSS of Party02.
+240528 16:05:45 | | | | Read checking elements and ciphertexts from Party02.
+240528 16:05:45 | | | | Our share is correct.
+240528 16:05:45 | | | | Exchange verdicts.
+240528 16:05:45 | | | | | Read verdict of Party01.
+240528 16:05:45 | | | | | Parse verdict (true).
+240528 16:05:45 | | | | | Read verdict of Party02.
+240528 16:05:45 | | | | | Parse verdict (true).
+240528 16:05:45 | | | | | Publish verdict (true).
+240528 16:05:45 | | | | Sharing of Party02 is accepted.
+240528 16:05:45 | | Write independent generator to file.
+240528 16:05:45 Generate distributed keys.
+240528 16:05:45 | Verify sharings of others.
+240528 16:05:45 | | Execute Pedersen 2 times with rotating dealer.
+240528 16:05:45 | | | Verify Pedersen VSS of Party01.
+240528 16:05:45 | | | | Read checking elements and ciphertexts from Party01.
+240528 16:05:45 | | | | Our share is correct.
+240528 16:05:45 | | | | Exchange verdicts.
+240528 16:05:45 | | | | | Read verdict of Party01.
+240528 16:05:45 | | | | | Parse verdict (true).
+240528 16:05:45 | | | | | Read verdict of Party02.
+240528 16:05:46 | | | | | Parse verdict (true).
+240528 16:05:46 | | | | | Publish verdict (true).
+240528 16:05:46 | | | | Sharing of Party01 is accepted.
+240528 16:05:46 | | | Verify Pedersen VSS of Party02.
+240528 16:05:46 | | | | Read checking elements and ciphertexts from Party02.
+240528 16:05:46 | | | | Our share is correct.
+240528 16:05:46 | | | | Exchange verdicts.
+240528 16:05:46 | | | | | Read verdict of Party01.
+240528 16:05:46 | | | | | Parse verdict (true).
+240528 16:05:46 | | | | | Read verdict of Party02.
+240528 16:05:46 | | | | | Parse verdict (true).
+240528 16:05:46 | | | | | Publish verdict (true).
+240528 16:05:46 | | | | Sharing of Party02 is accepted.
+240528 16:05:46 Waiting for mutual shutdown acknowledgements.
+240528 16:05:46 | Wait for Party01 to acknowledge.
+240528 16:05:46 | Wait for Party02 to acknowledge.
+240528 16:05:46 | Publish acknowledgement.
+240528 16:05:46 | Wait for Party01 to acknowledge.
+240528 16:05:46 | Wait for Party02 to acknowledge.
+240528 16:05:46 | Publish acknowledgement.
+240528 16:05:47 Allow download of our acknowledgment for another 1 seconds.
+240528 16:05:48 Stopping hint server.
+240528 16:05:48 Stopping http server.
+-----------------------------------------------------------
+Completed key generation.
+
+Running time:                                          (ms)
+- Execution         0h  0m  3s                         3542
+- Network           0h  0m  1s                         1644
+- Effective         0h  0m  1s                         1898
+- Idle              0h  0m  0s                          841
+- Computation       0h  0m  1s                         1057
+
+Communication:                                      (bytes)
+- Sent                 14.9 KB                        14888
+- Received             25.8 KB                        25841
+- Total                40.7 KB                        40729
+

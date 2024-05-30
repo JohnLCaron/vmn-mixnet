@@ -1,0 +1,12 @@
+
+HASH=$(vog -gen HashfunctionHeuristic SHA-512)
+SSKEYGEN=$(vog -gen SignatureKeyGenHeuristic 2048)
+CSKEYGEN=$(vog -gen CryptoKeyGenNaorYung "ECqPGroup(P-521)::00000000020100000020636f6d2e766572696669636174756d2e61726974686d2e4543715047726f75700100000005502d353231" "$HASH")
+
+KEYPAIR=$(vog -gen SignatureKeyPair "$SSKEYGEN")
+PKEY=$(vog -gen SignaturePKey "$KEYPAIR")
+
+vmni -party -e -name "Party01" -keygen "$CSKEYGEN" -seed seedfile -skey "$KEYPAIR" -pkey "$PKEY" -rand 'RandomDevice(/dev/urandom)::00000000020100000023636f6d2e766572696669636174756d2e63727970746f2e52616e646f6d446576696365010000000c2f6465762f7572616e646f6d' -hint 'localhost:4041' -hintl 'localhost:4041' -http 'http://localhost:8041' -httpl 'http://localhost:8041' -arrays 'file' && cp localProtInfo.xml "protInfo01.xml"
+
+printf $? > exitcode
+
