@@ -1,25 +1,23 @@
 #!/bin/bash
 
-source $(dirname "$0")/functions.sh
+WORKING=$1
 
-WORKSPACE_DIR=$1
-VERIFICATUM_WORKSPACE=${WORKSPACE_DIR}/vf
-rm -rf ${VERIFICATUM_WORKSPACE}/*
-mkdir -p ${VERIFICATUM_WORKSPACE}
-mkdir -p ${WORKSPACE_DIR}/vf
-
-if [ -z "${WORKSPACE_DIR}" ]; then
-    rave_print "No workspace provided."
+if [ -z "${WORKING}" ]; then
+    echo "No workspace provided."
     exit 1
 fi
 
-rave_print "Creating mixnet input from the encrypted ballots"
+VERIFICATUM_WORKSPACE=${WORKING}/vf
+rm -rf ${VERIFICATUM_WORKSPACE}/*
+mkdir -p ${VERIFICATUM_WORKSPACE}
 
-CLASSPATH="build/libs/egk-rave-all.jar"
+echo "Creating mixnet input from the encrypted ballots"
+
+CLASSPATH="build/libs/vmn-mixnet-all.jar"
 
 java -classpath $CLASSPATH \
   org.cryptobiotic.verificabitur.vmn.RunMakeMixnetInput \
-    -eballots ${WORKSPACE_DIR}/bb/encryptedBallots \
-    -out ${WORKSPACE_DIR}/vf/inputCiphertexts.bt
+    --inputDir ${WORKING}/public \
+    -out ${VERIFICATUM_WORKSPACE}/inputCiphertexts.bt
 
-rave_print "[DONE] Creating mixnet input."
+echo "[DONE] Creating mixnet input."

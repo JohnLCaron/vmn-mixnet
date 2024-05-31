@@ -48,7 +48,9 @@ class RunMixnetConfig {
             println("RunMixnetConfig inputDir= $inputDir workingDir= $workingDir ")
 
             val config = MixnetConfig(inputDir, workingDir)
-            val publicKeyFilename = config.makePublicKey()
+            val publicKeyFilename = "$workingDir/publicKey.bt"
+            writePublicKeyToByteFile(config.init.jointPublicKey.key, publicKeyFilename)
+
             val protoInfoFilename = config.makeProtoInfo(workingDir, pkey, width)
             val privInfoFilename = config.makePrivInfo(workingDir, rand, skey, keygen)
 
@@ -63,14 +65,6 @@ class MixnetConfig(val inputDir: String, val workingDir: String) {
     val consumer : Consumer = makeConsumer(inputDir)
     val init = consumer.readElectionInitialized().unwrap()
     val group = productionGroup(init.config.constants.name)
-
-    fun makePublicKey(): String  {
-        val publicKey = init.jointPublicKey
-        val mixnetPublicKey = ModPublicKey(publicKey.key)
-        val bt = mixnetPublicKey.publish()
-        writeByteTreeToFile(bt, "$workingDir/publicKey.bt")
-        return "$workingDir/publicKey.bt"
-    }
 
     fun setPublicKey(protInfoFilename: String, privInfoFilename: String, publicKeyFilename: String) {
         // make MixNetElGamal

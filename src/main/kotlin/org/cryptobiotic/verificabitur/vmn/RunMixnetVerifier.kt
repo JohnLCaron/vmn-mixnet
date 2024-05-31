@@ -61,8 +61,8 @@ class RunMixnetVerifier {
 
             val timer = SimpleTimer();
             val verifier = Verifier(inputDir, protInfo, sessionId, width, true)
-            verifier.verify()
-            println("sessionId $sessionId complete successfully")
+            val ok = verifier.verify()
+            println("sessionId $sessionId verify successfully = $ok")
             println("RunMixnetVerifier elapsed time = ${timer.elapsed()} msecs ($timer)")
         }
     }
@@ -100,10 +100,10 @@ class Verifier(shuffleDir: String, protInfo: String, val auxsid: String, val wid
         )
     }
 
-    fun verify() {
+    fun verify(): Boolean {
         var timer = SimpleTimer()
 
-        verifier.verify(shuffleDirFile, auxsid, width)
+        var ok = verifier.verify(shuffleDirFile, auxsid, width)
 
         if (verbose) {
             val nizkpSize: Long
@@ -118,6 +118,7 @@ class Verifier(shuffleDir: String, protInfo: String, val auxsid: String, val wid
             println("Completed verification after $timer  (${timer.elapsed()} ms")
             println()
         }
+        return ok
     }
 
 }

@@ -42,7 +42,7 @@ class ByteTreeReaderTest {
     fun testReadPublicKeyFile() {
         val filename = "$inputDir/publicKey.bt"
         println("readPublicKeyFile filename = ${filename}")
-        val pk = readPublicKeyFromFile(filename, group)
+        val pk = readPublicKeyFromByteFile(filename, group)
         println( "MixnetPublicKey = \n${pk}")
     }
 

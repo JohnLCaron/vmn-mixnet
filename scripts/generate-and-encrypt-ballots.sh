@@ -1,39 +1,44 @@
 #!/bin/bash
 
-source $(dirname "$0")/functions.sh
-
-WORKSPACE_DIR=$1
+PRIVATE_DIR=$1
 NUM_BALLOTS=$2
+PUBLIC_DIR=$3
 
-if [ -z "${WORKSPACE_DIR}" ]; then
-    rave_print "No workspace provided."
+if [ -z "${PRIVATE_DIR}" ]; then
+    echo "No private workspace provided."
     exit 1
 fi
 
 if [ -z "${NUM_BALLOTS}" ]; then
-    rave_print "No number of ballots provided."
+    echo "No number of ballots provided."
     exit 1
 fi
 
+if [ -z "${PUBLIC_DIR}" ]; then
+    echo "No public workspace provided."
+    exit 1
+fi
 
-rave_print "Generating ${NUM_BALLOTS} ballots..."
+echo ""
+echo "***generate and encrypt ballots:"
 
-CLASSPATH="build/libs/egk-rave-all.jar"
+rm -rf ${PRIVATE_DIR}/input_ballots/*
+rm -rf ${PUBLIC_DIR}/encrypted_ballots/*
 
-java -classpath $CLASSPATH \
-     electionguard.cli.RunCreateInputBallots \
-       -manifest ${WORKSPACE_DIR}/eg/manifest.json \
-       -out ${WORKSPACE_DIR}/eg/inputBallots \
-       --nballots ${NUM_BALLOTS} \
-       -json
+mkdir -p  ${PRIVATE_DIR}/input_ballots
+mkdir -p  ${PUBLIC_DIR}/encrypted_ballots
 
-rave_print "Encrypting ${NUM_BALLOTS} ballots..."
+CLASSPATH="build/libs/vmn-mixnet-all.jar"
 
-java -classpath $CLASSPATH \
-  electionguard.cli.RunBatchEncryption \
-    -in ${WORKSPACE_DIR}/eg \
-    -ballots ${WORKSPACE_DIR}/eg/inputBallots \
-    -eballots ${WORKSPACE_DIR}/bb/encryptedBallots \
-    -device device42
+echo "   RunExampleEncryption for ${NUM_BALLOTS} ballots, 2 devices but single directory"
 
-rave_print "[DONE] Generating encrypted ballots: ${WORKSPACE_DIR}/bb/encryptedBallots"
+/usr/bin/java -classpath $CLASSPATH \
+  org.cryptobiotic.eg.cli.RunExampleEncryption \
+    -in ${PUBLIC_DIR} \
+    -nballots ${NUM_BALLOTS} \
+    -pballotDir ${PRIVATE_DIR}/input_ballots \
+    -out ${PUBLIC_DIR} \
+    -device device42,yerDevice \
+    --noDeviceNameInDir
+
+echo "   [DONE] Generating encrypted ballots into ${PUBLIC_DIR}/encrypted_ballots"

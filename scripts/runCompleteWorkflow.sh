@@ -1,18 +1,17 @@
 # ~/.bashrc
-./scripts/initialize-election.sh working
-./scripts/generate-and-encrypt-ballots.sh working 10
-./scripts/tally-encrypted-ballots.sh working
-./scripts/tally-decrypt.sh working
-./scripts/make-mixnet-input.sh working
-./scripts/mixnet-initialize.sh working
-./scripts/mixnet-shuffle.sh working
-./scripts/copy-to-bb.sh working
-./scripts/mixnet-verify.sh working
-./scripts/pep-compare.sh working
-./scripts/pep-verify.sh working
+WORKING=$1
 
-# fetch latest eg library
-# cd tools/electionguard/egk-webapps
-# git fetch origin
-# git rebase -i origin/main
-# ./gradlew clean assemble
+if [ -z "${WORKING}" ]; then
+    echo "No workspace provided."
+    exit 1
+fi
+
+# electionguard
+#./scripts/election-initialize.sh ${WORKING}/private src/test/data/mixnetInput ${WORKING}/public
+#./scripts/generate-and-encrypt-ballots.sh ${WORKING}/private 100 ${WORKING}/public
+
+# mixnet
+#./scripts/make-mixnet-input.sh ${WORKING}
+#./scripts/mixnet-initialize.sh ${WORKING}
+#./scripts/mixnet-shuffle.sh ${WORKING}
+./scripts/mixnet-verify.sh ${WORKING}

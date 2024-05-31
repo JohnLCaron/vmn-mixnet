@@ -81,7 +81,7 @@ class ModPublicKeyTest {
     fun testRoundtrip() {
         val filename = "$inputDir/vf/publicKey.bt"
         println("readPublicKeyFile filename = ${filename}")
-        val mpk = ModPublicKey(readPublicKeyFromFile(filename, group))
+        val mpk = ModPublicKey(readPublicKeyFromByteFile(filename, group))
         println( "MixnetPublicKey = \n${mpk}")
 
         val root = mpk.publish()
@@ -102,7 +102,7 @@ class ModPublicKeyTest {
 
         val filename = "$inputDir/vf/publicKey.bt"
         println("readPublicKeyFile filename = ${filename}")
-        val mpk = readPublicKeyFromFile(filename, consumer.group)
+        val mpk = readPublicKeyFromByteFile(filename, consumer.group)
         println( "MixnetPublicKey = \n${mpk}")
 
         assertEquals(init.jointPublicKey.key, mpk)
