@@ -1,8 +1,7 @@
 package org.cryptobiotic.verificabitur.vmn
 
-import com.verificatum.arithm.PGroup
-import com.verificatum.arithm.PGroupElement
-import com.verificatum.arithm.PGroupElementArray
+import com.verificatum.arithm.*
+import com.verificatum.crypto.RandomDevice
 import com.verificatum.eio.ExtIO
 import com.verificatum.protocol.Protocol
 import com.verificatum.protocol.ProtocolFormatException
@@ -81,7 +80,9 @@ class Mixnet(privInfo: String, protInfo: String) {
     init {
         val factory: ProtocolElGamalInterfaceFactory = MixNetElGamalInterfaceFactory()
         elGamalRawInterface = factory.getInterface("raw")
+        println(" elGamalRawInterface = ${elGamalRawInterface.javaClass.name}")
 
+        // end debug
         val protocolInfoFile = File(protInfo)
         val generator = factory.getGenerator(protocolInfoFile)
         val privateInfo = Protocol.getPrivateInfo(generator, File(privInfo))

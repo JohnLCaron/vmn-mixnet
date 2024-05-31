@@ -1,7 +1,5 @@
 #!/bin/bash
 
-source $(dirname "$0")/functions.sh
-
 WORKSPACE_DIR=$1
 
 if [ -z "${WORKSPACE_DIR}" ]; then
@@ -9,18 +7,18 @@ if [ -z "${WORKSPACE_DIR}" ]; then
     exit 1
 fi
 
-rave_print "Shuffling encrypted ballots..."
+echo "Shuffling encrypted ballots..."
 
-EG_WORKSPACE="${WORKSPACE_DIR}/eg"
+EG_WORKSPACE="${WORKSPACE_DIR}/public"
 CONSTANTS="${EG_WORKSPACE}/constants.json"
 ELECTION_PARAMS="${EG_WORKSPACE}/election_initialized.json"
 
 VERIFICATUM_WORKSPACE="${WORKSPACE_DIR}/vf"
 
-CLASSPATH="build/libs/egk-rave-all.jar"
+CLASSPATH="build/libs/vmn-mixnet-all.jar"
 
 # shuffle once
-rave_print "... now shuffling once ..."
+echo "... now shuffling once ..."
 
 java -classpath $CLASSPATH \
   org.cryptobiotic.verificabitur.vmn.RunMixnet \
@@ -30,7 +28,7 @@ java -classpath $CLASSPATH \
     -sessionId mix1
 
 # shuffle twice
-rave_print "... now shuffling twice ..."
+echo "... now shuffling twice ..."
 
 java -classpath $CLASSPATH \
   org.cryptobiotic.verificabitur.vmn.RunMixnet \
@@ -39,4 +37,4 @@ java -classpath $CLASSPATH \
     -protInfo ${VERIFICATUM_WORKSPACE}/protocolInfo.xml \
     -sessionId mix2
 
-rave_print "[DONE] Shuffling encrypted ballots"
+echo "[DONE] Shuffling encrypted ballots"

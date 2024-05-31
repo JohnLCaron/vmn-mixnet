@@ -18,7 +18,7 @@ repositories {
     mavenCentral()
 }
 
-group = "egk-rave"
+group = "vmn-mixnet"
 version = "2.1-SNAPSHOT"
 
 dependencies {

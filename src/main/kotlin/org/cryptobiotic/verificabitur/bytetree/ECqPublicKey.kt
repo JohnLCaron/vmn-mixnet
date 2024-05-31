@@ -13,13 +13,14 @@ data class ECqPublicKey(val publicKey : ElementModP) {
     }
 
     fun publish() : ByteTreeNode {
-        val groupBt = (publicKey.group as EcGroupContext).makeECqPGroupBt()
+        val ecgroup = (publicKey.group as EcGroupContext)
+        val groupBt = ecgroup.makeECqPGroupBt()
         return makeNode("ECqPublicKey",
             listOf(
                 groupBt.publish(),
                 makeNode("wtf",
                     listOf(
-                        ElementBt(this.publicKey).publish(), // wtf?
+                        ElementBt(ecgroup.G_MOD_P).publish(), // wtf?
                         ElementBt(this.publicKey).publish()
                     )
                 )

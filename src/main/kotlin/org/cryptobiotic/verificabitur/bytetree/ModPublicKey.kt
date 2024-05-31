@@ -27,11 +27,21 @@ data class ModPublicKey(val publicKey : ElementModP, val encoding: Int = 0) {
     }
 }
 
-fun readPublicKeyFromFile(filename : String, group : GroupContext) : ElementModP {
+fun readPublicKeyFromByteFile(filename : String, group : GroupContext) : ElementModP {
     val isEC = group.constants.type == GroupType.EllipticCurve
 
     val tree = readByteTreeFromFile(filename)
     return if (isEC) tree.root.importECqPublicKey(group).publicKey else tree.root.importModPublicKey(group).publicKey
+}
+
+fun writePublicKeyToByteFile(publicKey: ElementModP, filename: String) {
+    val isEC = publicKey.group.constants.type == GroupType.EllipticCurve
+    val bt = if (isEC) {
+        ECqPublicKey(publicKey).publish()
+    } else {
+        ModPublicKey(publicKey).publish()
+    }
+    writeByteTreeToFile(bt, filename)
 }
 
 /* ModP

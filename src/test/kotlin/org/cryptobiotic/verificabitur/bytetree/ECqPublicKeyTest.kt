@@ -1,7 +1,6 @@
 package org.cryptobiotic.verificabitur.bytetree
 
 import org.cryptobiotic.eg.core.*
-import org.cryptobiotic.eg.core.Base16.toHex
 import kotlin.test.Test
 import kotlin.test.assertEquals
 import kotlin.test.assertNotNull
@@ -19,7 +18,7 @@ class ECqPublicKeyTest {
 
     @Test
     fun testEcPublicKeyFile() {
-        testReadRavePublicKeyFile("/home/stormy/dev/github/egk-rave/working/vf/publicKey.bt")
+        testReadRavePublicKeyFile("working/vf/publicKey.bt")
     }
 
     fun testReadRavePublicKeyFile(filename: String): String? {
@@ -60,10 +59,10 @@ class ECqPublicKeyTest {
     }
 
     @Test
-    fun testRoundtrip() {
+    fun testPublishImportRoundtrip() {
         val filename = ecpkFilename
         println("readPublicKeyFile filename = ${filename}")
-        val mpk = ECqPublicKey(readPublicKeyFromFile(filename, group))
+        val mpk = ECqPublicKey(readPublicKeyFromByteFile(filename, group))
         println( "MixnetPublicKey = \n${mpk}")
 
         val root = mpk.publish()
@@ -74,6 +73,17 @@ class ECqPublicKeyTest {
         println("\npublish\n${node.show()}")
 
         assertTrue(root.array().contentEquals(node.array()))
+    }
+
+    @Test
+    fun testCreatePublishImportRoundtrip() {
+        val pk = elGamalKeyPairFromRandom(group).publicKey.key
+        val ecpk = ECqPublicKey(pk)
+        val btnode = ecpk.publish()
+        println(btnode.show())
+
+        val roundtripPk: ECqPublicKey = btnode.importECqPublicKey(group)
+        assertEquals(ecpk, roundtripPk)
     }
 
 }

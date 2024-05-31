@@ -1,7 +1,5 @@
 #!/bin/bash
 
-source $(dirname "$0")/functions.sh
-
 WORKSPACE_DIR=$1
 
 if [ -z "${WORKSPACE_DIR}" ]; then
@@ -9,29 +7,29 @@ if [ -z "${WORKSPACE_DIR}" ]; then
     exit 1
 fi
 
-rave_print "Verifying shuffled ballots..."
+echo "Verifying shuffled ballots..."
 
-EG_BB="${WORKSPACE_DIR}/bb/eg"
-VF_BB="${WORKSPACE_DIR}/bb/vf"
+EG_WORKSPACE="${WORKSPACE_DIR}/public"
+VERIFICATUM_WORKSPACE="${WORKSPACE_DIR}/vf"
 
-CLASSPATH="build/libs/egk-rave-all.jar"
+CLASSPATH="build/libs/vmn-mixnet-all.jar"
 
-rave_print "... verify mix1 shuffle ..."
+echo "... verify mix1 shuffle ..."
 
 java -classpath $CLASSPATH \
   org.cryptobiotic.verificabitur.vmn.RunMixnetVerifier \
-    -protInfo ${VF_BB}/protocolInfo.xml \
-    -shuffle ${VF_BB}/mix1 \
+    -protInfo ${VERIFICATUM_WORKSPACE}/protocolInfo.xml \
+    -shuffle ${VERIFICATUM_WORKSPACE}/Party01/nizkp/mix1 \
     --sessionId mix1 \
-    -width 34
+    -width 21
 
-rave_print "... verify mix2 shuffle ..."
+echo "\n... verify mix2 shuffle ..."
 
 java -classpath $CLASSPATH \
   org.cryptobiotic.verificabitur.vmn.RunMixnetVerifier \
-    -protInfo ${VF_BB}/protocolInfo.xml \
-    -shuffle ${VF_BB}/mix2 \
+    -protInfo ${VERIFICATUM_WORKSPACE}/protocolInfo.xml \
+    -shuffle ${VERIFICATUM_WORKSPACE}/Party01/nizkp/mix2 \
     --sessionId mix2 \
-    -width 34
+    -width 21
 
-rave_print "[DONE] Verifying shuffled ballots"
+echo "[DONE] Verifying shuffled ballots"
