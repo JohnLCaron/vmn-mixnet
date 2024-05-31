@@ -1,13 +1,18 @@
 package org.cryptobiotic.verificabitur.bytetree
 
+import org.cryptobiotic.eg.core.createDirectories
 import kotlin.test.Test
 
 class ByteTreeWriterTest {
-    val inputDir = "src/test/data/working/vf"
+    val inputDir = "src/test/data/workingEc/vf"
     val mixDir = "$inputDir/Party01/nizkp/mix2"
     val proofsDir = "$inputDir/Party01/nizkp/mix2/proofs"
 
     val testOutDir = "testOut/ByteTreeWriterTest"
+
+    init {
+        createDirectories(testOutDir)
+    }
 
     @Test
     fun testRoundtripRavePublicKeyFile() {

@@ -1,0 +1,69 @@
+{
+    "joint_public_key": "Am8JcfpT996h43t8PvPk5BY5Bzvm513FE2jFDH8OlYN+",
+    "extended_base_hash": "8U8iyveXSJtBXFH1qxhOGi9M2e5x3fy8hsWBRfUL6tw=",
+    "guardians": [
+        {
+            "guardian_id": "trustee1",
+            "x_coordinate": 1,
+            "coefficient_proofs": [
+                {
+                    "public_key": "AuDkqqfie97vvf5gsPfMRgCR/EiddqK9n+ZmKMfkQpcs",
+                    "challenge": "BKoG0bsONz6zp3TT7ZEn+Q2b0+ybLt8qhCSB/rcBYlY=",
+                    "response": "/2DrnS00QsF42VqCF0iv82V/8UW5hYG5BPqA9QA6tzk="
+                },
+                {
+                    "public_key": "AihS82IBwOntNf4l9Yn7Qfv6iLYYamn03EYdttf29bWU",
+                    "challenge": "dI4fYCFmZAIp4Zz80S39adwwbhaI1AwUjDdiEmgN3a0=",
+                    "response": "08iXuXTLAi9cWGDYgLeuMZz4E3woajYipF39INXIrjE="
+                },
+                {
+                    "public_key": "AwS/drhV6CveflDSd4/3ACLjg9OvaiJtaT3WGL4RLFrL",
+                    "challenge": "imcTg7d4MiFlRDsAR8RmVrr70hcm6fztcZLPTWk6Iyg=",
+                    "response": "SrztWoeon06hxHgSBVB3LAqAOAJI/MFVckNSvqwkmYI="
+                }
+            ]
+        },
+        {
+            "guardian_id": "trustee2",
+            "x_coordinate": 2,
+            "coefficient_proofs": [
+                {
+                    "public_key": "AuVPqYV6p1dJ7t9QjfXJnXahZvWQjQcoveATenQB824d",
+                    "challenge": "K3DoVVrLPK7iuT89EtnUlTBxh40DNZAd7c9VgqtZRLI=",
+                    "response": "dfNeHMYs5q3H0OmYrNoCYMbHNhqs2G2Ql6OaHBTyY7A="
+                },
+                {
+                    "public_key": "AvYakc08KpStr/FeA59UflUSLa2ehbs98JM9Z1tg672g",
+                    "challenge": "/vDkTBghPSnbKF2OFtUNc8yeHgvajMDUOabpmMRVQzQ=",
+                    "response": "xIk6F3SLJz0ie+KVv6Zu4EvYIfMRFUf75yl4pdvSQBM="
+                },
+                {
+                    "public_key": "A+o1r2R9xtkxcZPFCEwagwaGlRKf743ybSl9+U3dPcHl",
+                    "challenge": "KyJ7ae2b9ADNVvG6SlYbfQ1OUMyrle5SjvNEgnn8HnU=",
+                    "response": "eQLR5u5ComYNUI0MXd+00RbNtmftlrSwrzAaYdViDHE="
+                }
+            ]
+        },
+        {
+            "guardian_id": "trustee3",
+            "x_coordinate": 3,
+            "coefficient_proofs": [
+                {
+                    "public_key": "A5ywDbmlWmwJKfDdstP+jh4n0MeYRQbmLdeZjPcBGtZ7",
+                    "challenge": "PYuusbzWphTdPICKJb4Nfw9hJvv3o/YXZ/3YQr5mKBY=",
+                    "response": "h6pidPzp1SYxGfbg/36iiE7oqiDDIlDUB+tNuHqZe30="
+                },
+                {
+                    "public_key": "A5hKMPJOuatvcy8OVoB7yBZaLNx7Mi77HiqpEkONmyGp",
+                    "challenge": "kHgEvHPn0o10xGW0AF2vzK1WXCYl5FepJuXSzryGsoU=",
+                    "response": "ed29bncKSk5a2774KWkBhORbvUS06/Z9dKbHnDCHSi0="
+                },
+                {
+                    "public_key": "AwGHDewCBSy7UxLvlBnjfY6N0vu3Fo3ckyIJxwpPc+me",
+                    "challenge": "anGndzFo2C4942cOK+7GJs5c3RyOORPEg6QO3woSpwI=",
+                    "response": "plOSr27Qdbq5XPtkYlYq/pN1Okm+RJTZKk0F+iw12uM="
+                }
+            ]
+        }
+    ]
+}

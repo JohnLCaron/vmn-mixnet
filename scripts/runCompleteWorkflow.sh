@@ -7,11 +7,11 @@ if [ -z "${WORKING}" ]; then
 fi
 
 # electionguard
-#./scripts/election-initialize.sh ${WORKING}/private src/test/data/mixnetInput ${WORKING}/public
-#./scripts/generate-and-encrypt-ballots.sh ${WORKING}/private 100 ${WORKING}/public
+./scripts/election-initialize.sh ${WORKING}/private src/test/data/mixnetInput ${WORKING}/public
+./scripts/generate-and-encrypt-ballots.sh ${WORKING}/private 100 ${WORKING}/public
 
 # mixnet
-#./scripts/make-mixnet-input.sh ${WORKING}
-#./scripts/mixnet-initialize.sh ${WORKING}
-#./scripts/mixnet-shuffle.sh ${WORKING}
+./scripts/make-mixnet-input.sh ${WORKING}
+./scripts/mixnet-initialize.sh ${WORKING}
+./scripts/mixnet-shuffle.sh ${WORKING}
 ./scripts/mixnet-verify.sh ${WORKING}
