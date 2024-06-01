@@ -7,17 +7,14 @@ import kotlin.test.Test
 import kotlin.test.assertEquals
 
 class MixnetBallotTest {
-    val inputDir = "src/test/data/working/vf"
-    val bbDir = "src/test/data/working/bb/vf"
-    val nizkpDir = "$inputDir/Party01/nizkp"
-    val proofsDir = "$inputDir/Party01/nizkp/mix2/proofs"
-
-    val egDir = "src/test/data/working/eg"
-    val group = productionGroup("Integer4096")
+    val inputDir = "src/test/data/workingEc/public"
+    val vfDir = "src/test/data/workingEc/vf"
+    val nizkpDir = "$vfDir/Party01/nizkp"
+    val group = productionGroup("P-256")
 
     @Test
     fun testMixnetInpute() {
-        readMixnetBallot("$inputDir/inputCiphertexts.bt")
+        readMixnetBallot("$vfDir/inputCiphertexts.bt")
     }
 
     @Test
@@ -30,18 +27,13 @@ class MixnetBallotTest {
 
     @Test
     fun showFiles() {
-        showFileHash("$inputDir/inputCiphertexts.bt")
+        showFileHash("$vfDir/inputCiphertexts.bt")
         println()
         showFileHash("$nizkpDir/mix1/Ciphertexts.bt")
         showFileHash("$nizkpDir/mix2/Ciphertexts.bt")
         showFileHash("$nizkpDir/mix1/ShuffledCiphertexts.bt")
         showFileHash("$nizkpDir/mix2/ShuffledCiphertexts.bt")
         println()
-
-        showFileHash("$bbDir/mix1/Ciphertexts.bt")
-        showFileHash("$bbDir/mix2/Ciphertexts.bt")
-        showFileHash("$bbDir/mix1/ShuffledCiphertexts.bt")
-        showFileHash("$bbDir/mix2/ShuffledCiphertexts.bt")
     }
 
     fun readMixnetBallot(inputFilename: String) {
@@ -55,8 +47,8 @@ class MixnetBallotTest {
         // the real test is if we can decrypt them
         val decryptor = CiphertextDecryptor(
             group,
-            egDir,
-            "$egDir/trustees",
+            "$inputDir/public",
+            "$inputDir/private/trustees",
         )
         ballots.forEachIndexed() { idx, it ->
             decryptor.decryptPep(it.encryptedSn())

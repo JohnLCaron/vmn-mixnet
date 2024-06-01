@@ -80,9 +80,7 @@ class Mixnet(privInfo: String, protInfo: String) {
     init {
         val factory: ProtocolElGamalInterfaceFactory = MixNetElGamalInterfaceFactory()
         elGamalRawInterface = factory.getInterface("raw")
-        println(" elGamalRawInterface = ${elGamalRawInterface.javaClass.name}")
 
-        // end debug
         val protocolInfoFile = File(protInfo)
         val generator = factory.getGenerator(protocolInfoFile)
         val privateInfo = Protocol.getPrivateInfo(generator, File(privInfo))
@@ -97,7 +95,6 @@ class Mixnet(privInfo: String, protInfo: String) {
         require(tree.root.childs() == 2)
         require(tree.root.child[0].childs() == tree.root.child[1].childs())
         val width = tree.root.child[0].childs()
-        println("width = $width")
 
         val inputCiphFile = File(input)
         val inputCiphertexts = readCiphertexts(mixnet, width, inputCiphFile)

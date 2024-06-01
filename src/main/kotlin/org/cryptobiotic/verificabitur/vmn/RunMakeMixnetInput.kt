@@ -13,6 +13,7 @@ import org.cryptobiotic.eg.election.EncryptedBallot
 import org.cryptobiotic.verificabitur.bytetree.MixnetBallot
 import org.cryptobiotic.verificabitur.bytetree.publish
 import org.cryptobiotic.verificabitur.bytetree.writeByteTreeToFile
+import org.cryptobiotic.verificabitur.reader.publishJson
 import java.io.FileOutputStream
 
 /** Read the EG encrypted ballots and create input file of ciphertexts for the mixnet to mix. */

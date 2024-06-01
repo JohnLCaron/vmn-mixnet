@@ -28,7 +28,7 @@ class ByteTreeReaderTest {
 
     @Test
     fun testReadRavePublicKeyFile() {
-        val filename = "working/bb/vf/mix1/FullPublicKey.bt"
+        val filename = "src/test/data/workingEc/vf/Party01/nizkp/mix1/FullPublicKey.bt"
         println("readPublicKeyFile filename = ${filename}")
         val root = readByteTreeFromFile(filename)
         println(root.show(10))

@@ -6,35 +6,34 @@ class RunMixnetVerifierTest {
 
     @Test
     fun testRunVerifier() {
-        val inputDir = "working/vf"
+        val inputDir = "src/test/data/workingEc/vf"
         RunMixnetVerifier.main(
             arrayOf(
-                "-nizkp", "$inputDir/dir/nizkp/1701230437",
-                "-protInfo", "$inputDir/protInfo.xml",
-                "-auxsid", "1701230437",
-                "-width", "34",
+                "--inputDir", "$inputDir/Party01/nizkp/mix1",
+                "--protInfo", "$inputDir/protocolInfo.xml",
+                "--width", "21",
+                "--sessionId", "mix1"
             )
         )
         RunMixnetVerifier.main(
             arrayOf(
-                "-nizkp", "$inputDir/dir/nizkp/1701230458",
-                "-protInfo", "$inputDir/protInfo.xml",
-                "-auxsid", "1701230458",
-                "-width", "34",
-            )
-        )
-    }
-
-    @Test
-    fun testRunVerifierMinimal() {
-        val inputDir = "working/bb/vf"
-        RunMixnetVerifier.main(
-            arrayOf(
-                "-shuffle", "$inputDir/mix1/",
-                "-protInfo", "$inputDir/protocolInfo.xml",
-                "-auxsid", "mix1",
-                "-width", "34",
+                "--inputDir", "$inputDir/Party01/nizkp/mix2",
+                "--protInfo", "$inputDir/protocolInfo.xml",
+                "--width", "21",
+                "--sessionId", "mix2"
             )
         )
     }
 }
+
+// RunMixnetVerifier starting
+//   inputDir= working/vf/Party01/nizkp/mix1
+//   protInfo = working/vf/protocolInfo.xml
+//   width = 21
+//   sessionId = mix1
+//
+//RunMixnetVerifier starting
+//   inputDir= working/vf/Party01/nizkp/mix2
+//   protInfo = working/vf/protocolInfo.xml
+//   width = 21
+//   sessionId = mix2

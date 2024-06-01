@@ -1,0 +1,582 @@
+{
+    "ballot_id": "ballot33",
+    "ballot_style_id": "BallotStyle2",
+    "encrypting_device": "yerDevice",
+    "timestamp": 1717187376,
+    "code_baux": "",
+    "confirmation_code": "bXlPJ5KQ2qos2z7tGByTVcaCtMDRBPizqPE+2YogaLs=",
+    "election_id": "8U8iyveXSJtBXFH1qxhOGi9M2e5x3fy8hsWBRfUL6tw=",
+    "contests": [
+        {
+            "contest_id": "contest4",
+            "sequence_order": 4,
+            "contest_hash": "WOageSYXJNaQXJw8asOvHqmz6HyLHZWtMfu+iqxl8T0=",
+            "selections": [
+                {
+                    "selection_id": "selection7",
+                    "sequence_order": 1,
+                    "encrypted_vote": {
+                        "pad": "A217I+3qufBDaCMJR7K4VmN3XhuJ7pmguMPsp13akqRf",
+                        "data": "AxHs0cwudBBe9WJMuz/SKbIP7M5hVLSa4YcQc5x7Lon9"
+                    },
+                    "proof": {
+                        "proofs": [
+                            {
+                                "challenge": "MKBqGZHJy1Ocq5nPP9kU9MkRDG/dAXOK6J58lK4rNRk=",
+                                "response": "N8x9o84QWAcpPXy6ygoC1Zjjol1E//Teykb5Wr7r0co="
+                            },
+                            {
+                                "challenge": "EjCoe2i67IXBsotExqkbYghBdCN80rbJRlOgquwX8CE=",
+                                "response": "Ws7j5qJsmPpCjqvJIxxohXHzC0ePpCmMVyVIba0KXao="
+                            }
+                        ]
+                    }
+                },
+                {
+                    "selection_id": "selection8",
+                    "sequence_order": 2,
+                    "encrypted_vote": {
+                        "pad": "Ak+d/UKFGkit6aba7D7btsqw7PexTbXV0mDclL/SEAD9",
+                        "data": "A8V4PFs4THe272+YAPfOpnDLzYbnsBdUWtaxwIgJcIH8"
+                    },
+                    "proof": {
+                        "proofs": [
+                            {
+                                "challenge": "bRaHkZtCl8BJ/p2vV1ptGU+sTNehJFNAVs7Xsm6Xne0=",
+                                "response": "24rDcTKAOvBbC3Od/oX2kf5MFA7qLY57cFiGPj45ueM="
+                            },
+                            {
+                                "challenge": "Hu2tlR+6TbiBS6NsNtkroyqX6XdaxFdRf1TE0VOoGPI=",
+                                "response": "vSGzrHXiQ1YvCSib3RFjMVs+E4LAu7GKzSzECvz89rs="
+                            }
+                        ]
+                    }
+                }
+            ],
+            "proof": {
+                "proofs": [
+                    {
+                        "challenge": "QvH51llrYq5kFOB1OECZfXjPrCMsv1ZvDL12ygsBmwc=",
+                        "response": "F5RDWgH7LQCmp2BpMXLK+V9ay9T+WRXGJg9d8MjTX5o="
+                    },
+                    {
+                        "challenge": "tfjFlRK1+GFD5T2oCJA5pNJ+QuNO/mf+WVMe9eUdqa0=",
+                        "response": "hS/Ph0WZHr16H0cULlSgnuDDUAbbe6xEkKI2GuEhPtM="
+                    }
+                ]
+            },
+            "encrypted_contest_data": {
+                "c0": "Ak/2HOxeS4MDN9rnx7sSu9STVQY5L+ihwJkNVKvtL6Wj",
+                "c1": "Z1filC3Yw0S8B0kGFcMFFzQMoJXU3MpgPKL2gxvc4PYCmUgLJ0aB3iHdbNF6BKsk/1p5zWm0VDYI+WE+0Uy3xQ==",
+                "c2": "g32omVYEco29iCZQVV6CacRUhDTtJDiwRVLJ/E8glCs=",
+                "numBytes": 62
+            }
+        },
+        {
+            "contest_id": "contest5",
+            "sequence_order": 5,
+            "contest_hash": "F94Rwq9rOVAJd0Hr0hgH7Gr475Zooq6ZbB1jJwhFMqE=",
+            "selections": [
+                {
+                    "selection_id": "selection9",
+                    "sequence_order": 1,
+                    "encrypted_vote": {
+                        "pad": "AhmKv9IYNfiF6oxZ2dMupz7uNYQ1Y1bO35/cnPi4FQWb",
+                        "data": "AwgddkUCyKlRqybjd0qQqjEbhyc3HjpSMl8+T+OUz98d"
+                    },
+                    "proof": {
+                        "proofs": [
+                            {
+                                "challenge": "kjoFe/lGzmJ3U5aFS5OD7LT/t7PS5DB4Wg7Mgms/Xec=",
+                                "response": "587OJtnM5Lav6RL0elIsO5hpoWpO59VuSubPPnxCN8Q="
+                            },
+                            {
+                                "challenge": "FXPjnz9fUn425g7q8dSMrVfNREGWBb3CdCFsM/zaCFw=",
+                                "response": "NnKapns3SrmCZVRl55uGCuQ1M2OYmFQB9xG0qua2UC8="
+                            }
+                        ]
+                    }
+                },
+                {
+                    "selection_id": "selection10",
+                    "sequence_order": 2,
+                    "encrypted_vote": {
+                        "pad": "Atx4N2QkteOsC1EDVw0ll5muaW/PK2BhtRLEXFNdsCVE",
+                        "data": "A0tKBkajakUn9VcnHA2vQWgrCRm+YlwGhhAvPm0asSww"
+                    },
+                    "proof": {
+                        "proofs": [
+                            {
+                                "challenge": "JPSCsjdCx68Y6wIDR8cfvudFUZ0lUHFaPIcHW9XMPpo=",
+                                "response": "ii60XiL3Xh/funpq5qihNBT66+Vu+BJWXq/hiHwaHXA="
+                            },
+                            {
+                                "challenge": "WVB8o2GOJTCPAEhiJ8QdJws5GWAw2LCrexcco2rzKCE=",
+                                "response": "80FjiJAw4pCT6ktH3yFmgKm9RbptFKc3pEsJrkqY6Z0="
+                            }
+                        ]
+                    }
+                }
+            ],
+            "proof": {
+                "proofs": [
+                    {
+                        "challenge": "Lh+BHF/Pq5a0nDFufMYgwb/ebwbleERzt1r7uhLq60c=",
+                        "response": "5ExKg9uB4RDO3jKRqMVR6qc5kXE3i6rv/Z+7XcToAvQ="
+                    },
+                    {
+                        "challenge": "0vPeaHp6/+BnFw6k6d2MTKMRanbzoZGXumF0+8FrDfI=",
+                        "response": "juSlQpCpExHlJ4iHRk5i94tUhhQEzJn2Qwc4zbvDUCU="
+                    }
+                ]
+            },
+            "encrypted_contest_data": {
+                "c0": "AmLgKOSKnVWG2dSsThufTjdXtTSQIEhZ/EKc3loCsg9y",
+                "c1": "S6gEzxEkZGu7Mv+0jr9Bxr13e7CbtSP19vtelarxcaUNVGw85S20mIKDDj0i4S10ZGz9KXuI9lNBYrovKli2ZQ==",
+                "c2": "zLbkXngZvvicDYGtwXB9Iy07qmUkRWs8qMPnbZemkO0=",
+                "numBytes": 62
+            }
+        },
+        {
+            "contest_id": "contest6",
+            "sequence_order": 6,
+            "contest_hash": "OrnaEOLYcEUT+0TsIMTDMz1EMuOoeYW0LKfmguP3BrM=",
+            "selections": [
+                {
+                    "selection_id": "selection11",
+                    "sequence_order": 1,
+                    "encrypted_vote": {
+                        "pad": "AmUG7vdhbavPRR80zl3RkKi1zh4Sz0kFGGir2LFFXxYD",
+                        "data": "AncMt2/JRHRDxOCGAlu/fCE8BFT6+XgcsJImYxFnsuRV"
+                    },
+                    "proof": {
+                        "proofs": [
+                            {
+                                "challenge": "GVmjw9pp6NESTFFyS1pevrZT03ROjjB16wB2gytjHmI=",
+                                "response": "JNSLA/IejPk0YAyLH3W5u8fB+I40W8wNw2Ffe1w829I="
+                            },
+                            {
+                                "challenge": "OWMbWlq70BSEIKyH2TgbGsHbi5Kx+um0cc64tnCdXlI=",
+                                "response": "UDzyfc63IXx/mdzkSK//t2NN84tmeS3Hi2+dcgI/Ugo="
+                            }
+                        ]
+                    }
+                }
+            ],
+            "proof": {
+                "proofs": [
+                    {
+                        "challenge": "GVmjw9pp6NESTFFyS1pevrZT03ROjjB16wB2gytjHmI=",
+                        "response": "JNSLA/IejPk0YAyLH3W5u8fB+I40W8wNw2Ffe1w829I="
+                    },
+                    {
+                        "challenge": "OWMbWlq70BSEIKyH2TgbGsHbi5Kx+um0cc64tnCdXlI=",
+                        "response": "UDzyfc63IXx/mdzkSK//t2NN84tmeS3Hi2+dcgI/Ugo="
+                    }
+                ]
+            },
+            "encrypted_contest_data": {
+                "c0": "A0Q6AvFO5ymZwEGcVBPwZqIuscjhdKpY2noAeaRmizVu",
+                "c1": "L9sE58OE5NwIx1wPhKH7qr90yrIyRk8vZuOR9tdgeg/YA3DM8fF+zvAKpzCaMGpF0/MvWw79Y+215c+nVQ/xmw==",
+                "c2": "cM8QTRkywljWju/lTDsBpDVD8t3eHjirWskDbBkl1ao=",
+                "numBytes": 62
+            }
+        },
+        {
+            "contest_id": "contest7",
+            "sequence_order": 7,
+            "contest_hash": "ddAkLw4+QcwpfzqGCWPDhxphYUI/I7UiqY8IHb74BB8=",
+            "selections": [
+                {
+                    "selection_id": "selection12",
+                    "sequence_order": 1,
+                    "encrypted_vote": {
+                        "pad": "A6WW/8cZr99DrWJiQh3bprSRcNJ5Ej87d0w5gVc6/1WV",
+                        "data": "Av9oTaTvbTzJguyvyPG6Nrd9aoXtex47kM6a/UfKBPvF"
+                    },
+                    "proof": {
+                        "proofs": [
+                            {
+                                "challenge": "w2E7E+npPeKUrO5mfFaTDz3jCCSazaYHaz25BQwJwVw=",
+                                "response": "n0BOL/9+H/GTGPKHoUoVpNJIUSM7DIoYx8QhtxxrIMQ="
+                            },
+                            {
+                                "challenge": "6OelMt8RTP0i9ljRvG9NQbd5Hw6dbvlRIs05qg6Xcv8=",
+                                "response": "fpGzkn2WaxvUDCg96m9ruonwc6q48wOGjtv8dZR1vJw="
+                            }
+                        ]
+                    }
+                },
+                {
+                    "selection_id": "selection13",
+                    "sequence_order": 2,
+                    "encrypted_vote": {
+                        "pad": "A4csIXfJS7ePFTE2oFoK1vGlzBUP+0mCzfwCbBhKVdLZ",
+                        "data": "AgYs18oU0uzvWtYKyqutRjHYhV0XMlWMjX6zq5YkiWtq"
+                    },
+                    "proof": {
+                        "proofs": [
+                            {
+                                "challenge": "sr70kYA59PFI404yrA0JTxF1vPPvHBSptxChsE+LxOA=",
+                                "response": "5j4i419f8/wMI/F6/BPQ1BZ/raEdrv0OgGn10mIZvnc="
+                            },
+                            {
+                                "challenge": "hMCjBw5Z3SEMMkD4drgRaMYbbxnM1wBJZYYuPhiS2mI=",
+                                "response": "8bsZtijbt4tIRgLP4LkzUp9bPW0jco07H0oCo5oOUU0="
+                            }
+                        ]
+                    }
+                }
+            ],
+            "proof": {
+                "proofs": [
+                    {
+                        "challenge": "raQODP4ecejqgmPAGevkd8d0a3Tq6E6a9vEdSIzvG+Q=",
+                        "response": "+L40cKYjQg9J6ag9gpedSYH+w6LC4h5hRi6/gFDAFTw="
+                    },
+                    {
+                        "challenge": "Sxh4qju6CLIcjot8imiiLTuRrbB0vgmrnw58vfVsijg=",
+                        "response": "nQcPEwtdctZcwi+6bgP70Si9l22YM0Vm5ka3SKHNcx8="
+                    }
+                ]
+            },
+            "encrypted_contest_data": {
+                "c0": "AinOFX5cLDd5BC41//gYsfL35VcB0wocwt9jwSgw9fQG",
+                "c1": "+r8IH/jj1VbQaZBw/oT6DTNFP7sAN9jSUxS8NLzVkAub19RzbtjvZco8he7QUia7KSWetxT2Pq0biZfc9CvlOw==",
+                "c2": "Y1V1mVbpZ1U93/rGhE94pgmVnio22zk1yBgAErvuRVo=",
+                "numBytes": 62
+            }
+        },
+        {
+            "contest_id": "contest11",
+            "sequence_order": 11,
+            "contest_hash": "XAmjfMMP4P0hGKS1LnYYr3++IXVSGozsBPk5WQG9EVM=",
+            "selections": [
+                {
+                    "selection_id": "selection21",
+                    "sequence_order": 1,
+                    "encrypted_vote": {
+                        "pad": "AiwvUjvr9X8DzXy5IPPmb2bzme/vvh6XFr63hxQtv15y",
+                        "data": "AtniGUtU5JTNf8SnZShl+vnj5JSDKWAq5gXDMggOW72u"
+                    },
+                    "proof": {
+                        "proofs": [
+                            {
+                                "challenge": "Z6TDkh6wUyU1NGNLUOpWEGrfnEBeymxvUQaWh+lfYdo=",
+                                "response": "a02egY+7WZaifIEDSLemBc+i0AAkWJWyI48CkaCTxfI="
+                            },
+                            {
+                                "challenge": "6cb4Jz27dgOVAqOqVzLOHGL9Z3VWral8vZPdJwjcMvQ=",
+                                "response": "/MoS2EW4OditCBL/q9vNMlqpfzp+ACFOkLRjKtuElks="
+                            }
+                        ]
+                    }
+                },
+                {
+                    "selection_id": "selection22",
+                    "sequence_order": 2,
+                    "encrypted_vote": {
+                        "pad": "AmPp7CPIm97/VmUHB4GzJFw9X6odzna6N+KLVCnE04LZ",
+                        "data": "A1ijgNDQ4JgISgCkZ5MakRuhVsCkyFISfQu+SpDQ0xSa"
+                    },
+                    "proof": {
+                        "proofs": [
+                            {
+                                "challenge": "B7fdCCWrBDUlDD0K3y1h5eJKhGemxS4WlkYptndCY2w=",
+                                "response": "DDW2w42nJPJc5wkydvVcvNJ959EUuJdZ+0ydr9XTvBY="
+                            },
+                            {
+                                "challenge": "3F4aXU9Kr9ZTxWIfF+RhcbHW8noS50orryWN34B3G7c=",
+                                "response": "PnfiECBE/uyZITdKOHrJYL3nqaKUC1uY2mowb+ybQss="
+                            }
+                        ]
+                    }
+                },
+                {
+                    "selection_id": "selection23",
+                    "sequence_order": 3,
+                    "encrypted_vote": {
+                        "pad": "A+NCM/piDjt4F07nFHSQJrfx3ujj3vgZ2wdLqrBUoqHY",
+                        "data": "ArVGdQmNHqzLNIHa1u9FJfkaaYzwfZ/cFNPr5NUPJOJZ"
+                    },
+                    "proof": {
+                        "proofs": [
+                            {
+                                "challenge": "zDabwOy6jKy/vPnjx+11w0hK4cZiXW6m1zPYTC1nL+g=",
+                                "response": "WaSc36Jmp2NiEw6s4+wK8ZiLwpxR8RJFCcsO9fX+D9U="
+                            },
+                            {
+                                "challenge": "QtVihulYRajNRS6E2knYNNN/yOsjw4IFtg8ODKrHzPU=",
+                                "response": "hlRR4RO03t2iROT7nG8pdy3bn2SxWwEqyEJFrp86azU="
+                            }
+                        ]
+                    }
+                }
+            ],
+            "proof": {
+                "proofs": [
+                    {
+                        "challenge": "S+4O/zFJCddntM7cBW8YCbvIf1XjayEBJrrVEGSa/8Q=",
+                        "response": "Vt4qed3ugKkcwpEPyluutUZigTZtC8PvnBxQCGNVORo="
+                    },
+                    {
+                        "challenge": "dT8dVwNyntxl8f7v2RLf5GaFSZ28xdLibFKekf9AT4Y=",
+                        "response": "63DLGZ9n2Nbq1cvANcmOY6+doBsgwIXyp48NBixUjAU="
+                    }
+                ]
+            },
+            "encrypted_contest_data": {
+                "c0": "A1HPMXog8hE3PdPW4X7Z0jLkvSWw2nBoxeO5rUhzsxLx",
+                "c1": "MiA3gpEQfRaP7AhEquSiQyZutGTSKAHYLm5urS0ONwvNZnOGL69c7bc7qA6RbdOnelS128Dvq6hqJ+nHRQnVRA==",
+                "c2": "pxjmgMKOdrrqc3hLAsijRLEtsvqqtoZPRFC1tkG56n4=",
+                "numBytes": 62
+            }
+        },
+        {
+            "contest_id": "contest12",
+            "sequence_order": 12,
+            "contest_hash": "5Mz1LErHRgOnmoK+fqt2GHU9nbv/srYXMCy3tQyoN8c=",
+            "selections": [
+                {
+                    "selection_id": "selection24",
+                    "sequence_order": 1,
+                    "encrypted_vote": {
+                        "pad": "AhT9i8swBbgoRNZoG6eCXahQ6WHgRVn14WyBsPPOCm1U",
+                        "data": "A5RmUO5GOeFBJ4RnMmBc/yrbBOSf1eCGu5aivJ8HZVAs"
+                    },
+                    "proof": {
+                        "proofs": [
+                            {
+                                "challenge": "1VLJckOj1lym3CiKDy2zoQFePsEKA+UNRSn33JJWHLw=",
+                                "response": "2ietNHuvcHCVf/DTKFnw52+pllWTbXUbuMnJigFzGts="
+                            },
+                            {
+                                "challenge": "qH2qg6gg4G0LLk1pWHIm+d0XRNj3d7x/Ik0jotlIzdI=",
+                                "response": "5+mfy+fGXJAGl5BaGiXFdfKYj33NwBKxn76QpBEs7W4="
+                            }
+                        ]
+                    }
+                }
+            ],
+            "proof": {
+                "proofs": [
+                    {
+                        "challenge": "1VLJckOj1lym3CiKDy2zoQFePsEKA+UNRSn33JJWHLw=",
+                        "response": "2ietNHuvcHCVf/DTKFnw52+pllWTbXUbuMnJigFzGts="
+                    },
+                    {
+                        "challenge": "qH2qg6gg4G0LLk1pWHIm+d0XRNj3d7x/Ik0jotlIzdI=",
+                        "response": "5+mfy+fGXJAGl5BaGiXFdfKYj33NwBKxn76QpBEs7W4="
+                    }
+                ]
+            },
+            "encrypted_contest_data": {
+                "c0": "ArGciRTC90O5eUijVwTwLZy3GnTYGm12zZ83t8uEe46B",
+                "c1": "iYxoDeNFXXjOIFvz1AqHBN60W1YO7Zg5mSWxCNZcTTi5SuoeSNRjqevDNlfhm737pCVHkZBEHU1zQhQDjypsBg==",
+                "c2": "u59VJfJ+E8b/u5M6pxZaX92TAdBsQth9v80on9SAIMw=",
+                "numBytes": 62
+            }
+        },
+        {
+            "contest_id": "contest14",
+            "sequence_order": 14,
+            "contest_hash": "PoeW7SQjEwNQFosefbHV6Ja5AGndDff7ikoO0K9Qyvo=",
+            "selections": [
+                {
+                    "selection_id": "selection28",
+                    "sequence_order": 1,
+                    "encrypted_vote": {
+                        "pad": "A24CeVL3XVqH7kJPEuQvjqg/8cacZCarYQkBrijDUoyw",
+                        "data": "A486RXqCeH+xXIPj+mF8tQwnrkyqBMtlhiW8KVK0qF5/"
+                    },
+                    "proof": {
+                        "proofs": [
+                            {
+                                "challenge": "pIgNOdGbn/UJD6mytQzkdJrofjp7k8lr5YYdUR5idMA=",
+                                "response": "GsPmnI1qFFvCAFgZjXvY1Qt+OgAsdK13rLccBBmTDc8="
+                            },
+                            {
+                                "challenge": "pSoYQFPLYRd0hQpQyYgs3A6c+refLlcKagaOAvSOFM8=",
+                                "response": "RLlM9pOj2qWez1NLgmH4HaFnR4xyJ1dymUKHvT0RcfI="
+                            }
+                        ]
+                    }
+                }
+            ],
+            "proof": {
+                "proofs": [
+                    {
+                        "challenge": "pIgNOdGbn/UJD6mytQzkdJrofjp7k8lr5YYdUR5idMA=",
+                        "response": "GsPmnI1qFFvCAFgZjXvY1Qt+OgAsdK13rLccBBmTDc8="
+                    },
+                    {
+                        "challenge": "pSoYQFPLYRd0hQpQyYgs3A6c+refLlcKagaOAvSOFM8=",
+                        "response": "RLlM9pOj2qWez1NLgmH4HaFnR4xyJ1dymUKHvT0RcfI="
+                    }
+                ]
+            },
+            "encrypted_contest_data": {
+                "c0": "Ar9V9kMeNybTMf0XMhp1pnVf0tHFyHOZlCiIiL9SAHyZ",
+                "c1": "WX1DgBlSZHe2e68Fk6Mu4znKOIC3CjSGZwQz6W6omboNwwCk0TLJuIQWH5xsV8Vk8mee9XTJYp+EDXBZL2mNpQ==",
+                "c2": "uZXU0IowaffoIo4eyr7hmg8wXPdojPJoSpc1eYoQhOM=",
+                "numBytes": 62
+            }
+        },
+        {
+            "contest_id": "contest16",
+            "sequence_order": 16,
+            "contest_hash": "VUO11ury/z5tpx0OaURXJp9Th6pOgujM+9qOsAc4V8U=",
+            "selections": [
+                {
+                    "selection_id": "selection31",
+                    "sequence_order": 1,
+                    "encrypted_vote": {
+                        "pad": "Am3EQFIf/nuMIif6IudXFnfTC51Z48zLu+3YZrTUr6L5",
+                        "data": "A9LGIQgI34h+pLmn0YLFZ8K4+Z/YGsWVTiSwkvDfr1XY"
+                    },
+                    "proof": {
+                        "proofs": [
+                            {
+                                "challenge": "ImFJKJp2kE2azCWoTnE4kO1XCHqWts7hOpaqw1Dl+yI=",
+                                "response": "POC//tg+Q4k6GSm0Ioni7dli4sOzoKPihwdRMTRqBqc="
+                            },
+                            {
+                                "challenge": "dL7wM0hwveI5nPu2RILaRwrfGnkEKeDRwu7KrDmASQw=",
+                                "response": "WB0TwqnVFBWo13EghuQn7PDU6uwv/LIm2f2xy5lKOpA="
+                            }
+                        ]
+                    }
+                },
+                {
+                    "selection_id": "selection32",
+                    "sequence_order": 2,
+                    "encrypted_vote": {
+                        "pad": "Awmk9uxXMW+NhbngTk4HroHoyUJ25k/SMkbYQZtqkI1O",
+                        "data": "AieXN8uzJHp88sGd3q2uEqyun5LfLunA92AQZKK8CwOm"
+                    },
+                    "proof": {
+                        "proofs": [
+                            {
+                                "challenge": "3fP4vVMFjvBf22H41f0EhD3HKFCIcAf4pDaDByrtxcU=",
+                                "response": "3z6r9gVNTIkBqN8Uy2hek5B6aB9cV7K1DmfRM0bappM="
+                            },
+                            {
+                                "challenge": "10Qt0qK7bxGOHku9M8hQSJeUY9xmlJU/AZ133ibqDnU=",
+                                "response": "a1U+ORTnDlC5We+rpbUEdSge1Wb/4I8p3Brd1RkPDz8="
+                            }
+                        ]
+                    }
+                }
+            ],
+            "proof": {
+                "proofs": [
+                    {
+                        "challenge": "Qi6LfQFLbrxs9yLyD+ypoq4/vpItUCGITX4KspYxtnM=",
+                        "response": "S3NKMWkk745ZNJdDHbDu9ZTM7iE5giX3P9veWIh4e9Q="
+                    },
+                    {
+                        "challenge": "MUPgsxDYOKRKj5gmh0nK9WxMOr2rGmhYWu4y4BYxkOg=",
+                        "response": "F6/CZM0W7hK9atE2VhD+DWj10+tAn2jzmr96wmWMnAc="
+                    }
+                ]
+            },
+            "encrypted_contest_data": {
+                "c0": "AhD4mTLzvRHK+4TsRH/ERg9UjU+ArtoAnWwXxBH9EZ1d",
+                "c1": "DPRNutoqsHk8ikomYUXt9IPoYsvM0NKxbdNlMQvzsk/OKu0MPHUfNvWw6HNraMd+I2McAzcQVeoxhPNJBZj73A==",
+                "c2": "qfuX5G6a5dvnH0VAtmVygGcYCYctwK2oTFTpxHmEcHs=",
+                "numBytes": 62
+            }
+        },
+        {
+            "contest_id": "contest17",
+            "sequence_order": 17,
+            "contest_hash": "X8AF2DgVIG1dm2tbGjEqNP0B7DLIQEmIl3Sz5/jENBQ=",
+            "selections": [
+                {
+                    "selection_id": "selection33",
+                    "sequence_order": 1,
+                    "encrypted_vote": {
+                        "pad": "AzeZjyL5b7Lv4knoaMFWrdhE3XKByZJK9hWNCROJi1RV",
+                        "data": "A7HNW5jyYEvQgtiJPzzlSVErF9W7tojr9fmfdJ9/VTvf"
+                    },
+                    "proof": {
+                        "proofs": [
+                            {
+                                "challenge": "4CANgcsW+soPw2lkQsXG2ueYhbQ954mCwauGQeq4plg=",
+                                "response": "2zgnhaU43Lgs7lxxzo6CmbD3kBY0m8hJDV98RKOv7AY="
+                            },
+                            {
+                                "challenge": "Ma59JQIbuncmPvNBUaZRPwCV4MbnTwcGiJZrTFcCfPo=",
+                                "response": "c5nUBYAdvl12DqKyZLgbgMKiO/xYh94BUach327qKtQ="
+                            }
+                        ]
+                    }
+                },
+                {
+                    "selection_id": "selection34",
+                    "sequence_order": 2,
+                    "encrypted_vote": {
+                        "pad": "Atm5hP53yqqUOM9G55w1n/X13plTEEQ3L/WnjSxWJ+rT",
+                        "data": "AmWopOB5iFLbyTljnBQqjcUnypwYE2oeKL+Q6WicMRof"
+                    },
+                    "proof": {
+                        "proofs": [
+                            {
+                                "challenge": "w5oUP9W6I/L6Ja0wS/Pur1qrvFBy+hCWXliyqAo/TL8=",
+                                "response": "7NPMma4bprHUPvCbXj0dTQTawb5LieFlFOipVipJbE8="
+                            },
+                            {
+                                "challenge": "mZiO+6d3zI4kXchlP6nVLr3TQeTD0pjjzSWUmVkTPEs=",
+                                "response": "8FEsL7isrC2VmapldmagtEFn99YQbhgVIUowmBtgwI8="
+                            }
+                        ]
+                    }
+                },
+                {
+                    "selection_id": "selection35",
+                    "sequence_order": 3,
+                    "encrypted_vote": {
+                        "pad": "AkjtTAMYhCOuh7hERQK/25JSlEyapr141qx27hdD/uak",
+                        "data": "Azbcq5nivFnzTCFMIsZYQ5E3cmUCt/CjSQw3gd94V1Og"
+                    },
+                    "proof": {
+                        "proofs": [
+                            {
+                                "challenge": "UaUFCsqPbW3HEwJd6R99UugN06KhzfltfJEtKpJ+TVY=",
+                                "response": "ejOTNJJRf8X14qizIy+bxh3ao6foGcpY8AQUMFKcFjk="
+                            },
+                            {
+                                "challenge": "WHW/rLlhEZOeK6Oqv8uM66vcQM7P80GC5eQFLgFKOUo=",
+                                "response": "t80+lhbMaPnrJMVVsJMf7pCkkmyQJisFYmCTdnztXbw="
+                            }
+                        ]
+                    }
+                }
+            ],
+            "proof": {
+                "proofs": [
+                    {
+                        "challenge": "aHfMm7vFvoJIvnhHUWPCwvHIErOmXdwg8/1CWWXJ0zY=",
+                        "response": "vH936smgt30aeXwYyv3/l78DJZT1TJmRgvv68skz9K0="
+                    },
+                    {
+                        "challenge": "tsZgpUUVT7y0ctH6HUud/DcgHioIUqLRRy6k0s2e/lg=",
+                        "response": "GGVIQm9s6h9qYxuTmVHzf43Bg7CUfeCOZX6jXEyM6bk="
+                    }
+                ]
+            },
+            "encrypted_contest_data": {
+                "c0": "AwxXRG67CglmmmqW9TS+tO/PAjmhgjoUkIi32gVh03hX",
+                "c1": "R6TkV6YVKsfBY1n1qkfW66A5y9byC6GFeHFBqwKcrSupqN60UaKj4AEhF1FcLel9eAgh9HXz6tFGZGd6EDF6Ig==",
+                "c2": "Va+xXSMbB3pRZM0A41cZk7r+w8dB8YLpagrkEnMHQHI=",
+                "numBytes": 62
+            }
+        }
+    ],
+    "state": "CAST",
+    "encrypted_sn": {
+        "pad": "AnAexu5/I8fEnesrpyHmM2gbuDMOdfhKUGKL0zMI33Ce",
+        "data": "A8OPKPE3cZfkX9NmuHqxxP15PjiVT64Yq/fU6XYeDAjc"
+    },
+    "is_preencrypt": false
+}

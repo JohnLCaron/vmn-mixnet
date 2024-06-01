@@ -26,6 +26,7 @@ dependencies {
     implementation(files("libs/verificatum-vcr-3.1.0.jar"))
     implementation(files("libs/verificatum-vmn-3.1.0.jar"))
     implementation(files("libs/verificatum-vecj-2.2.0.jar"))
+    implementation(files("libs/verificatum-vmgj-1.3.0.jar"))
 
     implementation(libs.bundles.eglib)
     implementation(libs.bundles.xmlutil)
@@ -40,7 +41,7 @@ tasks.test {
 }
 
 kotlin {
-    jvmToolchain(17)
+    jvmToolchain(19)
 }
 
 application {

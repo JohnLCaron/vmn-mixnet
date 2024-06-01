@@ -19,9 +19,9 @@ import org.cryptobiotic.verificabitur.reader.*
 import java.io.File
 
 class RunMixnetConfig {
+
     companion object {
         // TODO protInfo
-        const val width = 1
         const val pkey = "com.verificatum.crypto.SignaturePKeyHeuristic(RSA, bitlength=2048)::0000000002010000002d636f6d2e766572696669636174756d2e63727970746f2e5369676e6174757265504b65794865757269737469630000000002010000012630820122300d06092a864886f70d01010105000382010f003082010a0282010100b49ab0c54c6b920cf5888b18d97f82c946aa07ac8faee3ba941849757739d8fb74d22cb528bc4aa3375d6118a27b31b11e84ec6d32732d27ae0b181e35fe5f2f198a75da310654779974a84db3818f9248373f95420c6930427af5cbad0cbd35b21e81e26bd90494e6d207328b9b73b2cfc83c1c85eb8d28ce03fdc7ef0c24a99ac0c9231a0730b7fc459e2f482b1547e5f5118dcc138ea823439363901f0dad9ad9175e7f690996bcffc03fecb62e57ca76ef5e88ee89141cab51dbc30390bf55b19c9df7b1cf17d8648c85f33430c34f317ed3292b3a7c4e965e4ab1fec741eb0ad41a79213db316dbb885f3ca7fc03e991bfe3bb4b29d2574cbefa53a779b0203010001010000000400000800"
 
         // TODO privInfo
@@ -51,7 +51,7 @@ class RunMixnetConfig {
             val publicKeyFilename = "$workingDir/publicKey.bt"
             writePublicKeyToByteFile(config.init.jointPublicKey.key, publicKeyFilename)
 
-            val protoInfoFilename = config.makeProtoInfo(workingDir, pkey, width)
+            val protoInfoFilename = config.makeProtoInfo(workingDir, pkey, width = 1) // TODO width
             val privInfoFilename = config.makePrivInfo(workingDir, rand, skey, keygen)
 
             // replace vmn -setpk
